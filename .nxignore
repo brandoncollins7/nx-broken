@@ -1,0 +1,3 @@
+**/CHANGELOG.md
+!apps/oauth-server/dist
+!apps/oauth-server/node_modules/material-components-web

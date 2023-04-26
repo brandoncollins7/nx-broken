@@ -1,0 +1,36 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@frnt-libs/microservice-core/lib/*": [
+        "libs/legacy/microservice-core/dist/lib/*"
+      ],
+      "@frnt-libs/rabbitmq-core/lib/*": [
+        "libs/legacy/rabbitmq-core/dist/lib/*"
+      ],
+      "@frnt-libs/seido-bot-core/lib/*": [
+        "libs/legacy/seido-bot-core/dist/lib/*"
+      ],
+      "@frnt-libs/utils/lib/*": ["libs/legacy/utils/dist/lib/*"],
+      "@frnt/nest/auth": ["libs/nest/auth/src"],
+      "@frnt/nest/microservice": ["libs/nest/microservice/src"],
+      "@frnt/nest/utils": ["libs/nest/utils/src"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
